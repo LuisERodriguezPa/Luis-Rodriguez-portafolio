@@ -1,4 +1,5 @@
 body{
+    margin:0;
     background-color:#f0f9fd;
     /* background-color: #EDF9FE; */
     font-family: "Roboto", sans-serif;
@@ -161,21 +162,22 @@ body{
     margin-top: 0;
 }
 .footer{
+    background-color: #0c0c3c;
+    margin-top: 50px;
+    padding-top: 16px;
     text-align: center;
+    color: white;
 }
 .barra{
     margin-bottom: 50px;
 }
 .footer h2{
-    margin-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 .footer span{
     display: block;
 }
 .footer .copyright{
     font-size: 14px;
-    color: gray
-}
-.footer span:nth-child(2){
-    color: gray;
 }
