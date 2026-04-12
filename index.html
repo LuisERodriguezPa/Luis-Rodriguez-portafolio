@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Rodriguez Portafolio</title>
+    <title>Luis Rodriguez | Full Stack Java</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +12,9 @@
 </head>
 <body>
     <header class="header">
-        <div class="container_navbar">
-            <h1>Luis E Rodriguez</h1>
-            <div class="navbar">
+        <div class="container_navbar container">
+            <h1>Luis Rodriguez</h1>
+            <nav class="navbar">
                 <ul>
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
@@ -22,25 +22,25 @@
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#contactame">Contactame </a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
         
     </header>
-    <section id="hero" class="container">
+    <section id="hero" class="container hero">
         <div class="textHero">
-            <p> Soy desarrollador Full Stack especializado en Java, con experiencia en el diseño y desarrollo de aplicaciones web robustas, escalables y eficientes. Me apasiona crear soluciones completas, participando en todo el ciclo de desarrollo: desde la construcción del backend con tecnologías como Java y frameworks modernos, hasta la implementación de interfaces dinámicas y funcionales en el frontend.</p>
-
-            <p>Cuento con habilidades en el manejo de bases de datos, desarrollo de APIs, control de versiones y buenas prácticas de programación, siempre enfocado en escribir código limpio, mantenible y orientado a resultados. Me caracterizo por mi capacidad de aprendizaje continuo, adaptación a nuevas tecnologías y compromiso con la calidad en cada proyecto.</p>
-            <p>Busco aportar valor a través de soluciones tecnológicas que mejoren la experiencia del usuario y optimicen procesos.</p>
+            <h2>Desarrollador Full Stack Java</h2>
+            <p>Construyo aplicaciones web escalables con enfoque en backend solido y frontend moderno.</p>
+            <p>Desarrollador Full Stack Java enfocado en crear APIs eficientes y experiencias web funcionales. 
+                Apasionado por resolver problemas reales con código limpio y buenas prácticas.</p>
+            <div class="botones">
+                <a href="#proyectos" class="btn">Ver proyectos</a>
+                <a href="#contactame" class="btn btn-outline">Contactar</a>
+            </div>
             <div class="redes_sociales">
-                <a href="https://www.linkedin.com/in/luis-eduardo-rodriguez-pava-estudiante-del-bootcamp-full-stack-java-generation/" target="_parent"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/luis-eduardo-rodriguez-pava-estudiante-del-bootcamp-full-stack-java-generation/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/LuisERodriguezPa" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
-        <div class="imagen_hero">
-            <img src="./imagenes/programmer.jpg" alt="Imagen hero">
-        </div>
-
     </section>
 
     <hr class="barra container">
@@ -50,51 +50,51 @@
         <div class="habilidades">
             <div class="fronted">
                 <h3>{} Desarrollo Front-End</h3>
-                <div class="card">
-                    <img src="./imagenes/html5.png" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/html5.png" alt="Logo HTML5">
                     <h3>HTML</h3>
                     <span>Intermedio</span>
                 </div>
-                <div class="card">
-                    <img src="./imagenes/css3.png" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/css3.png" alt="Logo CSS3">
                     <h3>CSS</h3>
                     <span>Intermedio</span>
                 </div>
-                <div class="card">
-                    <img src="./imagenes/js.png" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/js.png" alt="Logo JavaScript">
                     <h3>JavaScript</h3>
                     <span>Intermedio</span>
                 </div>
                 <div class="card">
-                    <img src="./imagenes/react.png" alt="">
+                    <img src="./imagenes/react.png" alt="Logo React">
                     <h3>React</h3>
                     <span>Intermedio</span>
                 </div>
-                <div class="card">
-                    <img src="./imagenes/git-icons8-96.svg" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/git-icons8-96.svg" alt="Log Git">
                     <h3>Git</h3>
                     <span>Intermedio</span>
                 </div>
-                <div class="card">
-                    <img src="./imagenes/github.png" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/github.png" alt="Logo GitHub">
                     <h3>GitHub</h3>
                     <span>Intermedio</span>
                 </div>
             </div>
             <div class="backend">
                 <h3>[] Backend</h3>
-                <div class="card">
-                    <img src="./imagenes/java.png" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/java.png" alt="Logo Java">
                     <h3>Java</h3>
                     <span>Intermedio</span>
                 </div>
-                <div class="card">
-                    <img src="./imagenes/Mysql.png" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/Mysql.png" alt="Logo MySql">
                     <h3>MySQL</h3>
                     <span>Intermedio</span>
                 </div>
-                <div class="card">
-                    <img src="./imagenes/springboot.png" alt="">
+                <div class="card_habilidad">
+                    <img src="./imagenes/springboot.png" alt="Logo SpringBoot">
                     <h3>SpringBoot</h3>
                     <span>Intermedio</span>
                 </div>
@@ -111,24 +111,29 @@
             <span>Bogotá - 2026</span>
         </div>
     </section>
+
     <section id="proyectos" class="proyectos container">
         <h2>Proyectos</h2>
-        <div class="proyecto">
-            <img src="./imagenes/peluqueria-unsplash.jpg" alt="">
-            <span>Web Sistema de Reservas</span>
-            <h3>Style Factory</h3>
-        </div>
+        <div class="grid_proyectos">
+            <div class="card_proyecto">
+                <img src="imagenes/peluqueria-unsplash.jpg" alt="Sistema de reservas">
+                <h3>Style Factory</h3>
+                <p>Sistema de reservas para peluquería con gestión de citas y clientes.</p>
+                <p><strong>Tecnologías:</strong> Java, Spring Boot, MySQL</p>
+                <div class="links">
+                    <a href="#" target="_blank">Ver demo</a>
+                    <a href="https://github.com/LuisERodriguezPa/Style-Factory.git" target="_blank">Código</a>
+                </div>
+            </div> 
+        </div>      
     </section>
+
     <section id="contactame" class="contactame container">
         <h2 class="contacto">Contacto</h2>
-        <span>Email</span>
-        <p>luedropa@gmail.com</p>
+        <p>Email: luedropa@gmail.com</p>
     </section>
     <footer class="footer">
-        <h2>Luis Eduardo Rodriguez Pava</h2>
-        <span>Desarrollador FullStack Java</span>
-        <span class="copyright">© Copyright Luis E. All rights reserved</span>
-        <span>Made with ❤️ by Luis Rodriguez</span>
+        <p>© 2026 Luis Rodriguez</p>
     </footer>
 </body>
 </html>
