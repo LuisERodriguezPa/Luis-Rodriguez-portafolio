@@ -172,11 +172,6 @@ body{
 }
 
 /* PROYECTOS */
-.proyecto{
-    width: max-content;
-    margin: 0 auto 100px;
-    text-align: center;
-}
 .proyectos h2{
     text-align: center;
 }
