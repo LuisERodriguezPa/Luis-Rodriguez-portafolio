@@ -38,6 +38,9 @@ body{
 .header h2{
     margin: 0;
 }
+.header .navbar{
+    padding: 0;
+}
 .navbar ul{
     padding: 0;
     list-style: none;
@@ -57,7 +60,7 @@ body{
     height: 60px;
 }
 .navbar ul li a:hover{
-    background-color: #A6E1FA
+    color: #fff
 }
 
 /* HERO */
@@ -68,8 +71,8 @@ body{
     align-items: center;
 }
 .textHero p{
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 1.125rem;
+    line-height: 1.6;
 }
 
 .btn{
@@ -80,6 +83,10 @@ body{
     border-radius: 5px;
     margin-right: 10px;
     display: inline-block;
+    transition: all 0.3s;
+}
+.btn:hover{
+    border: 1px solid #0CBCEA;
 }
 .btn-descarga{
     color: #0c0c3c;
@@ -129,16 +136,16 @@ body{
 .titulo{
     width: 100%;
     text-align: center;
-    margin-top: 0;
+    margin-bottom: 30px;
 }
-.habilidades .fronted{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    width: 400px;
+.fronted{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
 }
 .fronted h3{
-    grid-column: 1/-1;
+    width: 100%;
     text-align: center;
     margin-bottom: 0.25rem;
 }
@@ -146,27 +153,30 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 100px;
 }
 .card_habilidad img{
+    display: block;
     width:100%;
 }
 
 .habilidades .backend{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    width: 400px;
-    align-content: start;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    row-gap: 5px;
     
 }
 .backend h3{
-    grid-column: 1/-1;
+    width: 100%;
     text-align: center;
-    margin-bottom: 0.25rem;
 }
 .barra{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
+
+/** EDUCACION **/
 .educacion{
     margin-bottom: 100px;
 }
@@ -268,7 +278,7 @@ body{
 @media(max-width:576px){
 
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     #hero{
         flex-direction: column;
         text-align: center;
