@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --color-texto:#0c0c3c;
+    --color-fondo-elemntos: #4cc9f0;
+}
 body{
     margin:0;
     background-color:#f0f9fd;
@@ -16,7 +20,8 @@ body{
 
 /* HEADER */
 .header{
-    background-color: #0CBCEA;
+    /*background-color: #0CBCEA;*/
+    background-color: #4cc9f0;
     height: 60px;
     position: sticky;
     top:0;
@@ -30,7 +35,7 @@ body{
     align-items: center;
 
 }
-.header h1{
+.header h2{
     margin: 0;
 }
 .navbar ul{
@@ -75,6 +80,16 @@ body{
     border-radius: 5px;
     margin-right: 10px;
     display: inline-block;
+}
+.btn-descarga{
+    color: #0c0c3c;
+    font-weight: bold;
+}
+.btn-descarga:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(76, 201, 240, 0.3);
 }
 
 .btn-outline{
@@ -171,15 +186,9 @@ body{
     display: block;
 }
 
-/* PROYECTOS */
+/** PROYECTOS **/
 .proyectos h2{
     text-align: center;
-}
-.grid_proyectos{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
-  gap:20px;
-  margin-top:30px;
 }
 .card_proyecto{
     background:white;
@@ -192,27 +201,71 @@ body{
     border-radius:10px;
 }
 .links a{
+    display: inline-block;
     margin-right:10px;
-    color:#0CBCEA;
+    background-color: #4cc9f0;
+    color:#0c0c3c;
     text-decoration:none;
+    font-weight: bold;
+    padding: 8px 28px;
+    border-radius: 8px;
 }
-/* CONTACTO */
+
+/** CONTACTO **/
 .contactame {
     text-align: center;
 }
 .contactame p{
     margin-top: 0;
 }
-/* FOOTER */
+
+/** FOOTER **/
 .footer{
     background-color: #0c0c3c;
     text-align:center;
-    padding:20px;
     color:white;
+    padding: 20px;
 }
-
+.footer_contenido{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+.footer .redes_sociales {
+    margin: 0;
+}
+.footer .redes_sociales a i{
+    font-size: 40px;
+    color:#0CBCEA;
+}
+.footer_contacto{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer_contacto a{
+    text-decoration: none;
+    color: #f0f9fd;
+}
+.footer_linea{
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 20px;
+    height: 1px;
+    background-color: #f0f9fd;
+}
+.footer_copy{
+    margin: 0 auto;
+}
 /* RESPONSIVE */
-@media(max-width:360px){
+@media(max-width:576px){
 
 }
 @media (max-width: 768px){
