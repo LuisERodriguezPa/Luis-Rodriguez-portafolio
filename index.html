@@ -12,20 +12,20 @@
     <script src="https://kit.fontawesome.com/da49b4fb7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container d-flex justify-content-between align-items-center">
-                    <a class="navbar-brand" href="/">Luis Rodriguez</a>
+                    <a class="navbar-brand" href="#hero">Luis Rodriguez</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul>
-                            <li><a class="activo" href="#header" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">Inicio</a></li>
-                            <li><a  href="#habilidades" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">Habilidades</a></li>
-                            <li><a  href="#educacion" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">Educación</a></li>
-                            <li><a  href="#proyectos" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">Proyectos</a></li>
-                            <li><a  href="#contactame" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">Contactame </a></li>
+                            <li><a class="activo" href="#hero">Inicio</a></li>
+                            <li><a  href="#habilidades">Habilidades</a></li>
+                            <li><a  href="#educacion">Educación</a></li>
+                            <li><a  href="#proyectos">Proyectos</a></li>
+                            <li><a  href="#contactame">Contactame </a></li>
                         </ul>
                     </div>
                 </div>
@@ -34,14 +34,23 @@
         
     </header>
     <section id="hero" class="container hero">
-        <div class="textHero">
+        <div class="hero_texto">
+             <span class="hero_badge">Disponible para trabajar</span>
+             <h1>Hola, soy<span> Luis Rodriguez</span></h1>
             <h2>Desarrollador Full Stack Java</h2>
-            <p>Construyo aplicaciones web escalables con enfoque en backend solido y frontend moderno.
-                Busco aportar valor a través de soluciones tecnológicas que mejoren la experiencia del usuario y optimicen procesos. Interesado en oportunidades donde pueda aportar valor, seguir creciendo profesionalmente y trabajar en equipo.
+            <p> Construyo aplicaciones web modernas y escalables usando Java, Spring Boot y JavaScript.
+                Interesado en oportunidades donde pueda aportar valor, seguir creciendo profesionalmente y trabajar en equipo.
             </p>
-           
+            <div class="hero_stack">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>HTML</span>
+            </div>
             <div class="botones">
-                <a href="./hoja de vida Luis Rodriguez.pdf" class="btn btn-descarga" download="">
+                <a href="./hoja de vida Luis Rodriguez.pdf" class="btn btn-descarga" download>
                     <i class="fa-solid fa-download"></i>
                     Descargar CV
                 </a>
@@ -52,10 +61,13 @@
                 <a href="https://www.linkedin.com/in/luis-eduardo-rodriguez-pava-estudiante-del-bootcamp-full-stack-java-generation/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/LuisERodriguezPa" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-        </div>
+        </div>    
+        <figure class="hero_imagen">
+            <img src="./imagenes/Luis Eduardo.png" alt="Luis Rodriguez">
+        </figure>
+            
+        
     </section>
-
-    <hr class="barra container">
 
     <section id="habilidades" class="container">
         <h2 class="titulo">Habilidades</h2>
@@ -109,7 +121,7 @@
         </div>
        
     </section>
-    <hr class="barra container">
+   
     <section id="educacion" class="educacion container">
         <h2>Educacion</h2>
         <div class="caja_titulo">
@@ -185,5 +197,6 @@
         <p class="footer_copy">© 2026 Luis Rodriguez</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
