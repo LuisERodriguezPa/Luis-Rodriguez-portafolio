@@ -264,6 +264,7 @@ h2{
     border: 1px solid var(--color-primary);
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(59,130,246,0.25);
+    border: 1px solid transparent;
 }
 .btn-descarga{
     color: white;
@@ -332,7 +333,15 @@ h2{
     display: block;
     width:100%;
 }
-
+.herramientas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.herramientas h3{
+    width: 100%;
+    text-align: center;
+}
 .habilidades .backend{
     display:flex;
     flex-wrap: wrap;
@@ -418,7 +427,7 @@ h2{
 
 /** FOOTER **/
 .footer{
-    background-color: #0c0c3c;
+    background-color: var(--color-surface);
     text-align:center;
     color:white;
     padding: 20px;
@@ -456,7 +465,8 @@ h2{
     max-width: 1200px;
     margin: 30px auto 20px;
     height: 1px;
-    background-color: #f0f9fd;
+    background-color: rgba(255, 255, 255, 0.1)
+    /* background-color: #f0f9fd; */
 }
 .footer_copy{
     margin: 0 auto;
