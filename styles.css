@@ -411,9 +411,18 @@ h2{
     padding: 30px;
     border-radius: 16px;
     border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+.caja_titulo:hover{
+    border-color: var(--color-primary);
+    
 }
 .experiencia{
     box-sizing: border-box;
+}
+.experiencia:hover{
+    border-color: var(--color-primary);
+    
 }
 .experiencia h4{
     color: var(--color-text);
@@ -427,6 +436,7 @@ h2{
 .educacion{
     color: #f8fafc;
 }
+
 .educacion h2{
     text-align: center;
 
@@ -457,6 +467,10 @@ h2{
 }
 .card>p{
     margin-bottom: 0;
+}
+.card:hover{
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 20px rgba(59,130,246,0.25);
 }
 .contact-item {
     display: flex;
