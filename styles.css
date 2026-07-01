@@ -315,8 +315,8 @@ h2{
 .fronted{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 20px;
+    justify-content: center;
+    column-gap: 30px;
 }
 .fronted h3{
     width: 100%;
@@ -327,33 +327,33 @@ h2{
     display:flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 100px;
+    row-gap: 5px;
 }
-.card_habilidad img{
-    display: block;
-    width:100%;
+.card_habilidad svg{
+    width:75px;
+    height: 75px;
 }
-.card_habilidad .fa-github{
-    font-size: 80px;
+
+.habilidades .backend{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    row-gap: 5px;
+    column-gap: 35px;
+    
+}
+.backend h3{
+    width: 100%;
+    text-align: center;
 }
 .herramientas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 30px;
 }
 .herramientas h3{
-    width: 100%;
-    text-align: center;
-}
-.habilidades .backend{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    row-gap: 5px;
-    
-}
-.backend h3{
     width: 100%;
     text-align: center;
 }
@@ -363,6 +363,11 @@ h2{
 
 
 /** PROYECTOS **/
+.proyectos .col-12,
+.proyectos .col-md-6,
+.proyectos .col-lg-4{
+    display: flex;
+}
 .proyectos h2{
     text-align: center;
 }
@@ -373,15 +378,26 @@ h2{
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .card_proyecto:hover{
     transform: translateY(-8px);
     border-color: var(--color-primary);
     box-shadow: 0 15px 30px rgba(59,130,246,0.2);
 }
+.card_proyecto h3{
+    margin-top: 0.5rem;
+}
 .card_proyecto img{
     width:100%;
+    height:220px;
+    object-fit: cover;
     border-radius:10px;
+}
+.links{
+    margin-top: auto;
 }
 .links a{
     display: inline-block;
@@ -399,31 +415,25 @@ h2{
 
 /** SOBRE MI **/
 .sobre_mi{
-    display: flex;
-    flex-wrap: wrap;
+    padding-bottom: 0;
 }
 .sobre_mi .titulo{
     width: 100%;
 }
-.sobre_mi .caja_titulo, .experiencia{
-    margin: 0 auto;
+.sobre_mi-card{
     background: var(--color-card);
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid var(--color-border);
-    transition: all 0.3s ease;
+    border:1px solid var(--color-border);
+    border-radius:18px;
+    padding:20px 30px 12px;
+    transition:.3s;
 }
-.caja_titulo:hover{
-    border-color: var(--color-primary);
-    
+
+.sobre_mi-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--color-primary);
+    box-shadow:0 20px 35px rgba(59,130,246,.15);
 }
-.experiencia{
-    box-sizing: border-box;
-}
-.experiencia:hover{
-    border-color: var(--color-primary);
-    
-}
+
 .experiencia h4{
     color: var(--color-text);
 }
@@ -448,10 +458,33 @@ h2{
 .educacion span{
     display: block;
 }
-
+.aprendiendo span{
+    display: inline-block;
+    padding:8px 16px;
+    border-radius:30px;
+    background:var(--color-card);
+    border:1px solid var(--color-border);
+}
+.aprendiendo span img{
+    width: 16px;
+    height: 16px;
+    vertical-align: center;
+}
+.informacion_profesional h4{
+    margin-bottom: 1rem;
+}
+.informacion_profesional p{
+    margin-bottom: 0.5rem;
+}
+.informacion_profesional div:last-child p{
+    margin-bottom: 0;
+}
 /** CONTACTO **/
 .contactame {
     text-align: center;
+}
+.contactame h2{
+    margin-bottom:1.875rem ;
 }
 .contactame p{
     margin-top: 0;
